@@ -5,6 +5,7 @@
     <title>TravelCue</title>
     <link rel="stylesheet" href="main.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?&key=AkZmA6inQ8X33Y7xyC7h937_FX52x5PCi6w0GZ_NS4o-S79PasmZnsXphgYbo5Hv' async defer></script>
 </head>
 <body>
     <header>
@@ -13,19 +14,24 @@
         </section>
     </header>
     <main>
+        <audio src="alarm.mp3" id="alarmSound" preload="auto"></audio>
         <section id="container">
+            <section id="MapBox">
+            </section>
+            <button id="closeMap">X</button>
             <form action="" id="formBox">
                 <label for="destination">Destination:</label>
                 <input type="text" id="destination">
                 <section class="btsection">
+                    <button type="button" id="map">Map</button>
                     <button type="submit">Submit</button>
                     <button type="button" id="stop">Cancel</button>
-                </section>
-                <section>
                     
                 </section>
             </form>
+            
         </section>
+        
     </main>
     <script src="scripts.js"></script>
 </body>
