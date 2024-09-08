@@ -3,36 +3,32 @@
 <head>
     <meta charset="UTF-8" />
     <title>TravelCue</title>
-    <link rel="stylesheet" href="main.css" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?&key=AkZmA6inQ8X33Y7xyC7h937_FX52x5PCi6w0GZ_NS4o-S79PasmZnsXphgYbo5Hv' async defer></script>
+    <link rel="stylesheet" href="Home.css" type="text/css">
 </head>
 <body>
     <header>
-        <section id="title">
-            <h1>Travel Cue</h1>
+        <section id="navbar">
+            <div id="title">
+                <img src="logo.png" alt="logo">
+                <span>TravelCue</span>
+            </div>     
+            <div id="navitems">
+                <a href="index.html"><span>Home</span></a>
+                <a href=""><span>Features</span></a>
+                <a href=""><span>Contact</span></a>
+                
+            </div>
         </section>
     </header>
     <main>
-        <audio src="alarm.mp3" id="alarmSound" preload="auto"></audio>
-        <section id="container">
-            <section id="MapBox">
-            </section>
-            <button id="closeMap">X</button>
-            <form action="" id="formBox">
-                <label for="destination">Destination:</label>
-                <input type="text" id="destination">
-                <section class="btsection">
-                    <button type="button" id="map">Map</button>
-                    <button type="submit">Submit</button>
-                    <button type="button" id="stop">Cancel</button>
-                    
-                </section>
-            </form>
-            
+        <section id="introbox">
+            <div id="intro">
+                <h1>Welcome to TravelCue</h1>
+                <p>This app will prevent you from missing your destination</p>
+                <button id="start">Get Start</button>
+            </div>
         </section>
-        
     </main>
-    <script src="scripts.js"></script>
+    <script src="home.js"></script>
 </body>
 </html>
