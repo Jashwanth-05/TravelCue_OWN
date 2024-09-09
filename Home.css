@@ -148,3 +148,35 @@ a{
     text-align: center;
     cursor: pointer;
 }
+
+@media (max-width: 600px) {
+    #MapBox{
+        display: none; 
+        position: absolute;
+        z-index: 2; 
+        width: 300px; 
+        height: 300px;
+        border: 2px solid black;
+        border-radius: 5px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+    }
+    #closeMap {
+        display: none;
+        position: absolute;
+        z-index: 3;
+        top: calc(50% - 140px); 
+        right: calc(50% + 120px); 
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        font-size: 16px;
+        text-align: center;
+        cursor: pointer;
+    }
+}

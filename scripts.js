@@ -1,6 +1,8 @@
 var watchId;
 var startLat,startLon,endLat,endLon,alarm;
 
+
+
 function GetMap()
     {
         document.getElementById('MapBox').style.display="block";
