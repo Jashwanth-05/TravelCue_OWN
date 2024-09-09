@@ -151,3 +151,10 @@ a{
     text-align: center;
     cursor: pointer;
 }
+
+@media (max-width: 400px) {
+    #closeMap {
+        top: 90%;
+        left: 100%;
+    }
+}
