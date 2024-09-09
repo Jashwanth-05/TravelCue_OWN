@@ -78,7 +78,7 @@ function calculateDistance() {
                 playSound();
                 alert('The destination is less than 500 meters away!');
                 setTimeout(stopAlertSound,600);
-                StopTracking;
+                StopTracking();
             }
         } else {
                 console.log('No results found');
@@ -107,3 +107,18 @@ document.getElementById('map').addEventListener('click',GetMap);
 document.getElementById('closeMap').addEventListener('click',CloseMap);
 document.getElementById('stop').addEventListener('click', StopTracking);
 
+// Close the map if clicking outside of it
+document.addEventListener('click', function(event) {
+    var mapBox = document.getElementById('MapBox');
+    var closeMap = document.getElementById('closeMap');
+    var container = document.getElementById('form');
+    var targetElement = event.target;
+
+    // Ensure the map does not close if clicking inside the map, container, or close button
+    if (mapBox.style.display === 'block' &&
+        targetElement !== mapBox && !mapBox.contains(targetElement) &&
+        targetElement !== closeMap && !closeMap.contains(targetElement) &&
+        targetElement !== container && !container.contains(targetElement)) {
+        CloseMap();
+    }
+});

@@ -138,9 +138,8 @@ a{
     display: none;
     position: absolute;
     z-index: 3;
-    top: 10%;
-    left: 34%;
-    right: calc(50% + 220px); 
+    top: 4rem;
+    left: 33rem;
     background-color: black;
     color: white;
     border: none;
@@ -150,11 +149,4 @@ a{
     font-size: 16px;
     text-align: center;
     cursor: pointer;
-}
-
-@media (max-width: 400px) {
-    #closeMap {
-        top: 90%;
-        left: 100%;
-    }
 }
