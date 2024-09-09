@@ -123,8 +123,8 @@ a{
     display: none; 
     position: absolute;
     z-index: 2; 
-    width: 500px; 
-    height: 500px;
+    width: 32rem; 
+    height: 32rem;
     border: 2px solid black;
     border-radius: 5px;
     top: 50%;
@@ -147,18 +147,4 @@ a{
     font-size: 16px;
     text-align: center;
     cursor: pointer;
-}
-
-@media (max-width: 600px) {
-    #MapBox {
-        display: none; 
-        width: 300px; 
-        height: 300px;
-    }
-    
-    #closeMap {
-        display: none;
-        top: calc(50% - 140px); 
-        right: calc(50% + 120px); 
-    }
 }
