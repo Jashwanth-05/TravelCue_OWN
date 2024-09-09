@@ -119,12 +119,14 @@ a{
 #formBox button:hover{
     background-color: rgb(43, 45, 66);
 }
-#MapBox{
-    display: none; 
+#MapBox {
+    display: none;
     position: absolute;
-    z-index: 2; 
-    width: 32rem; 
-    height: 32rem;
+    z-index: 2;
+    width: 80vw; /* 80% of the viewport width */
+    height: 80vh; /* 80% of the viewport height */
+    max-width: 32rem; /* Optional max-width to prevent it from getting too large */
+    max-height: 32rem; /* Optional max-height to prevent it from getting too large */
     border: 2px solid black;
     border-radius: 5px;
     top: 50%;
@@ -136,7 +138,8 @@ a{
     display: none;
     position: absolute;
     z-index: 3;
-    top: calc(50% - 240px); 
+    top: 10%;
+    left: 34%;
     right: calc(50% + 220px); 
     background-color: black;
     color: white;
